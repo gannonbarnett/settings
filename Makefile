@@ -12,6 +12,7 @@ install: ~/.vim/colors/everforest.vim ~/.vim/autoload/everforest.vim
 
 tmp/setshell:
 	chsh -s /bin/bash
+	[ -d tmp ] || mkdir tmp
 	touch tmp/setshell
 
 .PHONY:clean
