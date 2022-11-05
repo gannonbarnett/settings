@@ -7,12 +7,14 @@
 .PHONY: install
 install: ~/.vim/colors/everforest.vim ~/.vim/autoload/everforest.vim
 	cp -r dotfiles/ ~/
-	chsh -s /bin/bash
 	source ~/.bashrc
+	make tmp/setshell 
+
+tmp/setshell:
+	chsh -s /bin/bash
+	touch tmp/setshell
 
 .PHONY:clean
 clean:
 	rm -rf ~/.vim
-	rm -rf ~/.vimrc
-	rm ~/.bashrc
-	rm ~/.profile
+	rm -rf tmp
