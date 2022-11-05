@@ -6,7 +6,7 @@
 
 .PHONY: install
 install: ~/.vim/colors/everforest.vim ~/.vim/autoload/everforest.vim
-	install vimrc ~/.vimrc
+	install dotfiles/vimrc ~/.vimrc
 
 .PHONY:clean
 clean:

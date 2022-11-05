@@ -1,1 +1,4 @@
-# settings
+```
+make clean
+make install
+```
