@@ -1,12 +1,16 @@
+" Basic key settings
 set backspace=indent,eol,start
-
-syntax on 
-colorscheme everforest
-
-set number 
-set showcmd 
-filetype plugin indent on
-
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" All things color
+syntax on 
+set background=dark
+let g:everforest_background = 'medium'
+colorscheme everforest
+
+" Text settings
+set number 
+set showcmd 
+filetype plugin indent on

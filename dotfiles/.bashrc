@@ -8,3 +8,5 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 export PS1='$(echo $(dirname \w)|sed -e "s;\(/.\)[^/]*;\1;g")/$(basename \w)\e[0;34;1m$(parse_git_branch)\e[m$ '
 
 export force_color_prompt=yes
+
+. "$HOME/.cargo/env"
