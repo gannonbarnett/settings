@@ -21,7 +21,7 @@ rust:
 install: 
 	make dotfiles
 	make tmp/setshell 
-	make rust
+	source ~/.bashrc
 
 tmp/setshell:
 	chsh -s /bin/bash

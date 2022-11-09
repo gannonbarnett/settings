@@ -10,3 +10,6 @@ export PS1='$(echo $(dirname \w)|sed -e "s;\(/.\)[^/]*;\1;g")/$(basename \w)\e[0
 export force_color_prompt=yes
 
 . "$HOME/.cargo/env"
+
+# Alias for nice quick git log
+alias gl='git log --pretty=format:"%h - %an, %ar : %s"'
