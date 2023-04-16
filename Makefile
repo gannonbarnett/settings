@@ -17,8 +17,13 @@ dotfiles: ~/.vim/colors/everforest.vim ~/.vim/autoload/everforest.vim ~/.vim/pac
 rust: 
 	curl https://sh.rustup.rs -sSf | sh -s -- -y
 
+.PHONY: vscode
+vscode:
+	defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
 .PHONY: install
 install: 
+	make vscode
 	make dotfiles
 	make tmp/setshell 
 	source ~/.bashrc
